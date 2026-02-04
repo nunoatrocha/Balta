@@ -1,0 +1,14 @@
+C:\dev\Balta\POO_Pratica\bin\Debug\net10.0\POO_Pratica.exe
+C:\dev\Balta\POO_Pratica\bin\Debug\net10.0\POO_Pratica.deps.json
+C:\dev\Balta\POO_Pratica\bin\Debug\net10.0\POO_Pratica.runtimeconfig.json
+C:\dev\Balta\POO_Pratica\bin\Debug\net10.0\POO_Pratica.dll
+C:\dev\Balta\POO_Pratica\bin\Debug\net10.0\POO_Pratica.pdb
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.AssemblyInfoInputs.cache
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.AssemblyInfo.cs
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.csproj.CoreCompileInputs.cache
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.dll
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\refint\POO_Pratica.dll
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.pdb
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.genruntimeconfig.cache
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\ref\POO_Pratica.dll

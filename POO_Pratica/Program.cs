@@ -4,18 +4,24 @@
     {
         static void Main(string[] args)
         {
-            var esc = new Escuteiro();
-            esc.Nome = "Nuno";
+            var esc = new Escuteiro("Nuno", 46, "Rua de Cima");
             esc.ImprimeNome();
             esc.Cumprimenta();
             Console.WriteLine(esc.Nome);
         }
 
-        class Pessoa
+        public class Pessoa
         {
-            public string Nome;
-            public int Idade;
-            public string Morada;
+            public string Nome { get; set; }
+            public int Idade { get; set; }
+            public string Morada { get; set; }
+
+            public Pessoa(string nome, int idade, string morada )
+            {
+                Nome = nome;
+                Idade = idade;
+                Morada = morada;
+            }
 
             public void ImprimeNome()
             {
@@ -24,18 +30,23 @@
 
             public virtual void Cumprimenta()
             {
-
+                Console.WriteLine($"Olá {Nome} => Metodo Pai");
             }
         }
 
-        class Escuteiro : Pessoa
+        public class Escuteiro : Pessoa
         {
-            string Seccao;
-            string NomeEquipa;
+            public string Seccao { get; set; }
+            public string NomeEquipa { get; set; }
 
+            public Escuteiro(string nome, int idade, string morada) 
+                : base(nome, idade, morada)
+            {
+            }
 
             public override void Cumprimenta()
             {
+                base.Cumprimenta();
                 Console.WriteLine($"Olá {Nome}!");
             }
         }

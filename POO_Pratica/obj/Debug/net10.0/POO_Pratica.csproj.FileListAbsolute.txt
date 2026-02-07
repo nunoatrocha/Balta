@@ -12,3 +12,4 @@ C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\refint\POO_Pratica.dll
 C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.pdb
 C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.genruntimeconfig.cache
 C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\ref\POO_Pratica.dll
+C:\dev\Balta\POO_Pratica\obj\Debug\net10.0\POO_Pratica.sourcelink.json

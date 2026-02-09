@@ -6,11 +6,12 @@
         {
             Escuteiro e1 = new Escuteiro ("Rita", new DateTime(2010, 8, 10), "Rua de Ciema", "Pioneiros", "Pantera");
             e1.Cumprimenta();
+            Dirigente d1 = new Dirigente("Nuno", new DateTime(1979, 11, 11), "Rua de Baixo", "Exploradores", "Lobo","Chefe de Secção");
+            d1.Cumprimenta();
         }
 
         public class Pessoa
         {
-
             // PARAMETROS ----------------------
 
             public string Nome { get; set; }
@@ -39,7 +40,7 @@
                 Morada = morada;
             }
 
-            //  METODO DA CLASSE PESSOA
+            //  METODO DA CLASSE PESSOA ----------
 
             public virtual void Cumprimenta()
             {
@@ -78,7 +79,7 @@
 
             public override void Cumprimenta()
             {
-                Console.WriteLine($"Olá eu {Cargo} nos {Seccao}");
+                Console.WriteLine($"Olá eu sou o {Nome} e sou {Cargo} nos {Seccao}");
             }
 
 

@@ -1,13 +1,30 @@
-﻿namespace POO_Pratica
+﻿using System;
+using System.Collections.Generic;
+
+namespace POO_Pratica
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Escuteiro e1 = new Escuteiro ("Rita", new DateTime(2010, 8, 10), "Rua de Ciema", "Pioneiros", "Pantera");
+            Escuteiro e1 = new Escuteiro ("Rita", new DateTime(2010, 8, 10), "Rua de Cima", "Pioneiros", "Pantera");
+            Escuteiro e2 = new Escuteiro("Pedro", new DateTime(2011, 4, 1), "Rua de Amanhã tb é dia", "Lobitos", "Azul");
+            Escuteiro e3 = new Escuteiro("Ana", new DateTime(2009, 6, 21), "Rua de Não Venhas Tarde", "Caminheiros", "Pedro Alvares Cabral");
             e1.Cumprimenta();
             Dirigente d1 = new Dirigente("Nuno", new DateTime(1979, 11, 11), "Rua de Baixo", "Exploradores", "Lobo","Chefe de Secção");
             d1.Cumprimenta();
+
+            var lista = new List<Escuteiro>();
+            lista.Add(e1);
+            lista.Add(e2);
+            lista.Add(e3);
+
+            foreach (var item in lista)
+            {
+                if (item.Seccao == "Lobitos")
+                    Console.WriteLine(item.Nome);
+            }
+
         }
 
         public class Pessoa

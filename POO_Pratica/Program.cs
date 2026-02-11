@@ -25,6 +25,8 @@ namespace POO_Pratica
                     Console.WriteLine(item.Nome);
             }
 
+            Console.WriteLine(e1.Morada);
+
         }
 
         public class Pessoa
@@ -50,10 +52,10 @@ namespace POO_Pratica
 
             // METODO CONSTRUTOR ---------------
 
-            public Pessoa(string nome, DateTime datanascimento, string morada)
+            public Pessoa(string nome, DateTime dataNascimento, string morada)
             {
                 Nome = nome;
-                DataNascimento = datanascimento;
+                DataNascimento = dataNascimento;
                 Morada = morada;
             }
 
@@ -70,8 +72,8 @@ namespace POO_Pratica
             public string Seccao { get; set; }
             public string NomeEquipa { get; set; }
 
-            public Escuteiro(string nome, DateTime datanascimento, string morada, string seccao, string nomeEquipa)
-                :base(nome, datanascimento, morada )
+            public Escuteiro(string nome, DateTime dataNascimento, string morada, string seccao, string nomeEquipa)
+                :base(nome, dataNascimento, morada )
             {
                 Seccao = seccao;
                 NomeEquipa = nomeEquipa;
@@ -88,8 +90,8 @@ namespace POO_Pratica
         {
             public string Cargo { get; set; }
 
-            public Dirigente(string nome, DateTime datanascimento, string morada, string seccao, string nomeEquipa, string cargo)
-                :base(nome, datanascimento, morada, seccao, nomeEquipa)
+            public Dirigente(string nome, DateTime dataNascimento, string morada, string seccao, string nomeEquipa, string cargo)
+                :base(nome, dataNascimento, morada, seccao, nomeEquipa)
             {
                 Cargo = cargo;
             }

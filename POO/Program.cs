@@ -14,9 +14,13 @@ namespace POO
             pagamentoCR.NumeroPrestacao = "123456789";
             
             var pagamento = new Pagamento();
-            pagamento.Vencimento = DateTime.Now;
+            pagamento.DataPagamento = DateTime.Now;
+
+            
+            pagamento.MoradaEnvio = new Morada("4200-001");
 
             Console.WriteLine(pagamento.DataPagamento);
+            Console.WriteLine(pagamento.MoradaEnvio);
         }
 
         public class Pagamento
@@ -24,7 +28,6 @@ namespace POO
             // Propriedades - (Variáveis)
 
             public DateTime Vencimento { get; set; }
-            public DateTime _dataPagaemnto { get; private set; }
 
             private DateTime _dataPagamento;
 
@@ -42,7 +45,8 @@ namespace POO
                 } 
             }
 
-            public Morada MoradaEnvio;
+            public Morada MoradaEnvio { get; set; }
+
 
             // Eventos - (Funções) 
 
@@ -79,6 +83,17 @@ namespace POO
         public class Morada
         {
             public string CodigoPostal;
+
+            public Morada(string codigoPosta)
+            {
+                CodigoPostal = codigoPosta;
+            }
+
+            public override string ToString()
+            {
+                return CodigoPostal;
+            }
         }
+
     }
 }
